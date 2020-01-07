@@ -15,8 +15,17 @@
         "repositoryURL": "https://github.com/vapor/core.git",
         "state": {
           "branch": null,
-          "revision": "18f2436bf7a6bc2224372c0885db2e0159af1649",
-          "version": "3.9.2"
+          "revision": "10d33362a47fab03a067e78fb0791341d9c634fa",
+          "version": "3.9.3"
+        }
+      },
+      {
+        "package": "CRuntime",
+        "repositoryURL": "https://github.com/wickwirew/CRuntime.git",
+        "state": {
+          "branch": null,
+          "revision": "95f911318d8c885f6fc05e971471f94adfd39405",
+          "version": "2.1.2"
         }
       },
       {
@@ -38,21 +47,30 @@
         }
       },
       {
-        "package": "Fluent",
-        "repositoryURL": "https://github.com/vapor/fluent.git",
+        "package": "Graphiti",
+        "repositoryURL": "https://github.com/noahemmet/Graphiti.git",
         "state": {
-          "branch": null,
-          "revision": "b915c321c6f9e83743ee5efa35a30895e1b02e51",
-          "version": "3.2.0"
+          "branch": "patch-3",
+          "revision": "0763dbf6dce2701dbf0d0d4d6a0cbd2212a4514a",
+          "version": null
         }
       },
       {
-        "package": "FluentSQLite",
-        "repositoryURL": "https://github.com/vapor/fluent-sqlite.git",
+        "package": "GraphQL",
+        "repositoryURL": "https://github.com/GraphQLSwift/GraphQL.git",
         "state": {
           "branch": null,
-          "revision": "c32f5bda84bf4ea691d19afe183d40044f579e11",
-          "version": "3.0.0"
+          "revision": "b10a33de33820dea4ba5f4b2df28c30b52958425",
+          "version": "0.12.0"
+        }
+      },
+      {
+        "package": "VaporGraphQL",
+        "repositoryURL": "https://github.com/noahemmet/GraphQLRouteCollection.git",
+        "state": {
+          "branch": "fullswift",
+          "revision": "2740fdab6b70d066e3df0d8ead5d037c8b89c53f",
+          "version": null
         }
       },
       {
@@ -69,8 +87,8 @@
         "repositoryURL": "https://github.com/vapor/multipart.git",
         "state": {
           "branch": null,
-          "revision": "f919a01c4d10a281d6236a21b0b1d1759a72b8eb",
-          "version": "3.0.4"
+          "revision": "f063180d0b84832accd33194e06ed3c41f8609ac",
+          "version": "3.1.1"
         }
       },
       {
@@ -83,30 +101,21 @@
         }
       },
       {
+        "package": "Runtime",
+        "repositoryURL": "https://github.com/wickwirew/Runtime.git",
+        "state": {
+          "branch": null,
+          "revision": "61c9776f47d2951bdc562486ad348e5e1ca2e180",
+          "version": "2.1.1"
+        }
+      },
+      {
         "package": "Service",
         "repositoryURL": "https://github.com/vapor/service.git",
         "state": {
           "branch": null,
           "revision": "fa5b5de62bd68bcde9a69933f31319e46c7275fb",
           "version": "1.0.2"
-        }
-      },
-      {
-        "package": "SQL",
-        "repositoryURL": "https://github.com/vapor/sql.git",
-        "state": {
-          "branch": null,
-          "revision": "50eaeb8f52a1ce63f1ff3880e1114dd8757a78a6",
-          "version": "2.3.2"
-        }
-      },
-      {
-        "package": "SQLite",
-        "repositoryURL": "https://github.com/vapor/sqlite.git",
-        "state": {
-          "branch": null,
-          "revision": "314d9cd21165bcf14215e336a23ff8214f40e411",
-          "version": "3.2.1"
         }
       },
       {

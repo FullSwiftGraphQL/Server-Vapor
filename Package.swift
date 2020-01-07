@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
   name: "VaporApp",
   products: [
-    .library(name: "VaporApp", targets: ["App"]),
+    .library(name: "VaporApp", targets: ["App", "Generate Schema"]),
   ],
   dependencies: [
     // 💧 A server-side Swift web framework.
@@ -12,13 +12,17 @@ let package = Package(
     
     // GraphQL
     .package(url: "https://github.com/GraphQLSwift/GraphQL.git", .upToNextMajor(from: "0.12.0")),
-    .package(url: "https://github.com/GraphQLSwift/Graphiti.git", .upToNextMajor(from: "0.11.0")),
+    // This fork publicizes the `schema` property. (https://github.com/GraphQLSwift/Graphiti/pull/34)
+    .package(url: "https://github.com/noahemmet/Graphiti.git", .branch("patch-3")),
     // Forked from StevenLambion/GraphQLRouteCollection.git
     .package(url: "https://github.com/noahemmet/GraphQLRouteCollection.git", .branch("fullswift")),
   ],
   targets: [
-    .target(name: "App", dependencies: ["GraphQL", "Graphiti", "Vapor"]),
+    .target(name: "App", dependencies: ["GraphQL", "Graphiti", "VaporGraphQL", "Vapor"]),
     .target(name: "Run", dependencies: ["App"]),
+    .target(name: "Generate Schema", dependencies: ["App", "GraphQL", "Graphiti", "VaporGraphQL", "Vapor"]),
+    
+    // Tests
     .testTarget(name: "AppTests", dependencies: ["App"])
   ]
 )
