@@ -11,11 +11,13 @@ let package = Package(
     .package(url: "https://github.com/vapor/vapor.git", from: "3.0.0"),
     
     // GraphQL
-    .package(url: "https://github.com/GraphQLSwift/GraphQL.git", .upToNextMajor(from: "0.12.0")),
-    // This fork publicizes the `schema` property. (https://github.com/GraphQLSwift/Graphiti/pull/34)
-    .package(url: "https://github.com/noahemmet/Graphiti.git", .branch("patch-3")),
-    // Forked from StevenLambion/GraphQLRouteCollection.git
-    .package(url: "https://github.com/noahemmet/GraphQLRouteCollection.git", .branch("fullswift")),
+    // Note there is an issue with @functionBuilders and Graphiti: https://github.com/GraphQLSwift/Graphiti/issues/32
+    // Forked from https://github.com/GraphQLSwift/GraphQL
+    .package(url: "https://github.com/alexsteinerde/GraphQL.git", .branch("master")),
+    // Forked from https://github.com/GraphQLSwift/Graphiti
+    .package(url: "https://github.com/alexsteinerde/Graphiti.git", .revision("a0c55a9")),
+    // Forked from https://github.com/StevenLambion/GraphQLRouteCollection
+    .package(url: "https://github.com/noahemmet/GraphQLRouteCollection.git", .branch("example-app")),
   ],
   targets: [
     .target(name: "App", dependencies: ["GraphQL", "Graphiti", "VaporGraphQL", "Vapor"]),
